@@ -8,9 +8,7 @@ import Insights from './pages/Insights';
 import Contact from './pages/Contact';
 // Industries
 import Education from './pages/Industries/Education'; 
-import HealthCare from './pages/Industries/HealthCare';
 import EngineeringBuildingConstruction from './pages/Industries/Engineering-Building-Construction';
-import FinancialServices from './pages/Industries/FinancialServices';
 import Agriculture from './pages/Industries/Agriculture';
 import SocialSector from './pages/Industries/SocialSector';
 import RealEstate from './pages/Industries/RealEstate';
@@ -22,7 +20,7 @@ import DigitalTransformation from './pages/Insight/Digital-Transformation';
 import EconomicTrends from './pages/Insight/Economic-trends';
 import LeadershipInnovation from './pages/Insight/Leadership-Innovation';
 import Sustainability from './pages/Insight/Sustainability';
-
+import DataAnalytics from './pages/Insight/Data-Analytics';
 function App() {
   return (
     <Router>
@@ -35,9 +33,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             {/*Industries Routes */}
             <Route path="/industries/education" element={<Education />} />
-            <Route path="/industries/healthcare" element={<HealthCare />} />
             <Route path="/industries/engineering-building-construction" element={<EngineeringBuildingConstruction />} />
-            <Route path="/industries/financial" element={<FinancialServices />} />
             <Route path="industries/agriculture" element={<Agriculture />} />
             <Route path="/industries/social-sector" element={<SocialSector />} />
             <Route path="/industries/real-estate" element={<RealEstate />} />
@@ -52,6 +48,7 @@ function App() {
             <Route path="/insights/economic-trends" element={<EconomicTrends />} />
             <Route path="/insights/leadership-innovation" element={<LeadershipInnovation />} />
             <Route path="/insights/sustainability" element={<Sustainability />} />
+            <Route path="/insights/data-analytics" element={<DataAnalytics />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

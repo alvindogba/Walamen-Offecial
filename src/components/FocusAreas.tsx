@@ -6,7 +6,7 @@ const services = [
   { title: 'Agricultural Sustainability Advisory', link: '/services/healthcare' },
   { title: 'Project Management & Construction Engineering', link: '/services/construction' },
   { title: 'Sustainable Farming Solutions & Agri-Tech', link: '/services/agri-tech' },
-  { title: 'Real Estate and Asset Management Consulting', link: '/services/it' },
+  { title: 'Real Estate ', link: '/services/it' },
   { title: 'Social Impact Advisory', link: '/services/financial' }
 ];
 
