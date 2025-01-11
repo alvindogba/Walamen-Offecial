@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 interface NavLinksProps {
   onItemClick?: () => void;
 }
@@ -20,18 +20,17 @@ const NavLinks = ({ onItemClick }: NavLinksProps) => {
     {
       title: 'Insight',
       links: [
-        { name: 'Digital Transformation', href: '#' },
-        { name: 'Sustainability', href: '#' },
-        { name: 'Economic Trends', href: '#' },
-        { name: 'Leadership & Innovation', href: '#' },
-        { name: 'Data & Analytics', href: '#' }
+        { name: 'Digital Transformation', href: '/insights/economic-trends' },
+        { name: 'Sustainability', href: '/insights/sustainability' },
+        { name: 'Economic Trends', href: '/insights/economic-trends' },
+        { name: 'Leadership & Innovation', href: '/insights/leadership-innovation' },
+        { name: 'Data & Analytics', href: '/insights/data-analytics' }
       ]
     },
     {
       title: 'About',
       links: [
         { name: 'Our Firm', href: '#' },
-        { name: 'Our People', href: '#' },
         { name: 'Our History', href: '#' },
         { name: 'Our Values', href: '#' },
         { name: 'Our Mission', href: '#' }
@@ -56,13 +55,13 @@ const NavLinks = ({ onItemClick }: NavLinksProps) => {
           <ul className="space-y-3">
             {group.links.map((link) => (
               <li key={link.name}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className="text-gray-600 hover:text-secondary transition-colors duration-200"
                   onClick={onItemClick}
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

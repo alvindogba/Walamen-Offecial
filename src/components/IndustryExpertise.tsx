@@ -6,9 +6,9 @@ const industries = [
   {title: 'Education', link: '/industries/education'},
   { title: 'Agriculture', link: '/industries/agriculture' },
   { title: 'Building Construction', link: '/industries/building-construction' },
-  { title: 'Consumer & Industrial', link: '/industries/consumer-industrial' },
-  { title: 'Financial Sponsors & Services', link: '/industries/financial' },
-  { title: 'Healthcare', link: '/industries/healthcare' },
+  { title: 'LeaderShip Training', link: '/insight/leadership-inovation' },
+  { title: 'Procurement Management', link: '/industries/logistics-infrastructure' },
+  { title: 'Sustainability', link: '/industries/sustainability' },
   // { title: 'Private Clients', link: '/industries/private-clients' },
   // { title: 'Public Sector', link: '/industries/public-sector' },
   // { title: 'Real Estate', link: '/industries/real-estate' }

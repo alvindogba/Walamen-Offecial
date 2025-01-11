@@ -1,6 +1,6 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
-import bootcamp from '../assets/images/bootcamp.jpg';
+import bootcamp from '../assets/images/Education.jpg';
 import skill_demand from '../assets/images/skill-demand.jpg';
 import entrepreneur from '../assets/images/entrepreneur.jpg';
 

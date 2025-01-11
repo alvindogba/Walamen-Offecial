@@ -17,6 +17,12 @@ import RealEstate from './pages/Industries/RealEstate';
 import LogisticInfrastructure from './pages/Industries/Logistic-Infrastructure';
 import Technology from './pages/Industries/Technology';
 
+// Insights
+import DigitalTransformation from './pages/Insight/Digital-Transformation';
+import EconomicTrends from './pages/Insight/Economic-trends';
+import LeadershipInnovation from './pages/Insight/Leadership-Innovation';
+import Sustainability from './pages/Insight/Sustainability';
+
 function App() {
   return (
     <Router>
@@ -40,7 +46,12 @@ function App() {
             <Route path='/industries/*' element={<h1>Not Found</h1>} />
             {/* Industries Routes Ends here */}
 
+            {/* Insights Routes */}
             <Route path="/insights" element={<Insights />} />
+            <Route path="/insights/digital-transformation" element={<DigitalTransformation />} />
+            <Route path="/insights/economic-trends" element={<EconomicTrends />} />
+            <Route path="/insights/leadership-innovation" element={<LeadershipInnovation />} />
+            <Route path="/insights/sustainability" element={<Sustainability />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

@@ -5,6 +5,7 @@ import {
   FaLinkedinIn,
   FaInstagram
 } from 'react-icons/fa';
+import walamenLogo from '../assets/images/walamenLogo.png';
 
 export default function Footer() {
   const socialLinks = [
@@ -22,9 +23,9 @@ export default function Footer() {
           <div className="md:col-span-2">
             <Link to="/" className="inline-block mb-6">
               <img
-                src="https://placehold.co/200x60/e63946/FFFFFF/png?text=WALATECH"
-                alt="Walatech Logo"
-                className="h-12"
+                src={walamenLogo}
+                alt="Walamen Logo"
+                className="h-[100px] w-[250px] object-contain"
               />
             </Link>
             <p className="text-gray-300 mb-6">
@@ -60,11 +61,11 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-4">Industries</h4>
             <ul className="space-y-2">
-              <li><Link to="/industries/healthcare" className="text-gray-300 hover:text-white">Healthcare</Link></li>
+              <li><Link to="/industries/healthcare" className="text-gray-300 hover:text-white">Social Sector</Link></li>
               <li><Link to="/industries/technology" className="text-gray-300 hover:text-white">Technology</Link></li>
-              <li><Link to="/industries/finance" className="text-gray-300 hover:text-white">Finance</Link></li>
+              <li><Link to="/industries/finance" className="text-gray-300 hover:text-white">Logistic and Infrastructure</Link></li>
               <li><Link to="/industries/education" className="text-gray-300 hover:text-white">Education</Link></li>
-              <li><Link to="/industries/manufacturing" className="text-gray-300 hover:text-white">Manufacturing</Link></li>
+              <li><Link to="/industries/manufacturing" className="text-gray-300 hover:text-white">Agriculture</Link></li>
             </ul>
           </div>
 
@@ -92,7 +93,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-300 text-sm">
-              © {new Date().getFullYear()} Walatech. All rights reserved.
+              © {new Date().getFullYear()} Walamen. All rights reserved.
             </div>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link to="/terms" className="text-gray-300 hover:text-white">Terms of Use & Disclosures</Link>

@@ -1,22 +1,23 @@
 import { motion } from 'framer-motion';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import studygroupafricanpeople from "../../assets/images/study-group-african-people.jpg";
 
 const services = [
   {
-    title: 'Early childhood education and K-12',
-    description: 'Supporting schools and districts with innovative solutions to improve student outcomes.',
+    title: 'Zongeatech School: A Flagship of Innovation',
+    description: 'Walamen’s own Zongeatech School serves as a hub for STEM excellence, offering students hands-on learning experiences to prepare them for the industries of tomorrow.',
     image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80',
-    link: '/services/education/early-education'
+    link: 'https://zongeatech.com'
   },
   {
     title: 'Higher education',
-    description: 'Helping institutions navigate change and prepare students for success.',
+    description: 'We work with schools and districts to implement innovative tools and strategies that improve student outcomes and close the equity gap.',
     image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80',
     link: '/services/education/higher-education'
   },
   {
     title: 'Workforce development',
-    description: 'Building capabilities to meet evolving market demands through innovative training.',
+    description: 'Upskilling learners and professionals with programs that align education with evolving industry demands.',
     image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80',
     link: '/services/education/workforce'
   },
@@ -52,33 +53,31 @@ const caseStudies = [
 const partners = [
   {
     name: 'Bottom Line',
-    logo: '/images/partners/bottom-line.svg',
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSyKnPzfrmiACCjQYWMPPnXDhmxrpmL0Wq_TPeZr1EEBZWj7W-cFFVS6VyhlhYXUtrcyg&usqp=CAU",
     description: 'Working together to improve educational outcomes for underserved communities.'
   },
   {
     name: 'Braven',
-    logo: '/images/partners/braven.svg',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqJCQ39UV9KvvNo7wqL8oIaanHQ2bK7QKsrA&s',
     description: 'Partnering to empower the next generation of leaders.'
   },
   {
     name: 'Opportunity@Work',
-    logo: '/images/partners/opportunity-at-work.svg',
+    logo: 'https://cdn-icons-png.flaticon.com/512/115/115902.png',
     description: 'Collaborating to create pathways to meaningful careers.'
   }
 ];
 
 const insights = [
   {
-    title: 'Sports & Gaming: How all of this world  about learning to teach?',
-    date: 'March 15, 2024',
+    title: 'Partner with Us to Drive Educational Excellence',
+    description: 'Walamen believes in the power of collaboration to create transformative learning experiences. We partner with schools, universities, and institutions worldwide to bring innovative programs, technology integration, and impactful training to classrooms. Whether it’s a public school district, a private institution, or a community initiative, we work together to achieve meaningful outcomes.',
     image: 'https://images.unsplash.com/photo-1511377107391-116a9d5d20b5?auto=format&fit=crop&q=80',
-    link: '/insights/sports-gaming-education'
   },
   {
-    title: 'K-12 teachers are saying: What would you like to learn today?',
-    date: 'March 10, 2024',
+    title: 'Zongeatech: A Model for STEM and Innovation',
+    description: 'Zongeatech School is a testament to the power of innovation in education. As a flagship of excellence in STEM learning, Zongeatech offers students a unique opportunity to explore, experiment, and create in a supportive environment. Through hands-on projects, real-world challenges, and industry partnerships, Zongeatech prepares students for the future of work.',
     image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80',
-    link: '/insights/k12-teachers-perspective'
   }
 ];
 
@@ -101,7 +100,7 @@ export default function Education() {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl font-light text-white mb-4"
           >
-            Education
+            Inspiring Education Through Innovation and Collaboration
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -109,14 +108,41 @@ export default function Education() {
             transition={{ delay: 0.2 }}
             className="text-xl text-white/90 max-w-2xl"
           >
-            Working to help educators, institutions, and employers improve education and employment outcomes for all to create a more prosperous society with equal opportunity.
-          </motion.p>
+Walamen is transforming education by empowering schools, educators, and learners with innovative solutions. Together with Zongeatech School and our partners, we’re building a brighter future for education.          </motion.p>
         </div>
       </div>
 
+
+<section className='bg-white mb-8  min-h-[125vh] md:min-h-[80vh] '>
+
+
+      <div className='w-full h-screen p-4 pt-[5%] flex flex-col md:flex-row gap-4  md:justify-between  bg-white'>
+         {/* image here */}
+  <div className="md:w-[45%] h-[100%]">
+     <img 
+     src={studygroupafricanpeople} 
+     alt="image"
+     className="w-full h-full object-cover rounded-[4%]"
+     />
+   </div>  
+ 
+ {/* content here */}
+ <div className='md:w-[50%] flex flex-col gap-4 '>
+   <h1 className='text-4xl font-bold'>Revolutionizing Education for a Digital World</h1>
+   <p className='text-lg text-gray-600'>
+   "At Walamen, we are dedicated to advancing education through partnerships and innovation. From running our own Zongeatech School to collaborating with schools and institutions globally, we focus on bridging the gap between traditional learning and future-ready education. Whether it’s technology integration, workforce training, or STEM innovation, our solutions are designed to create impactful learning experiences for all."
+
+     </p>
+   <button className='bg-primary text-white px-4 py-2 rounded-full md:w-[40%] mt-4'>Contact Us</button>
+ </div>
+ 
+ </div>
+ </section>
+
       {/* Services Section */}
       <div className="max-w-7xl mx-auto px-4 py-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <h2 className="text-2xl font-light text-primary mb-12">OUR AREAS IN EDUCATION</h2>
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service) => (
             <motion.div
               key={service.title}
@@ -132,13 +158,7 @@ export default function Education() {
               </div>
               <h3 className="text-xl font-semibold text-primary mb-2">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              <a
-                href={service.link}
-                className="inline-flex items-center text-secondary group-hover:text-primary transition-colors"
-              >
-                <span>Learn More</span>
-                <ArrowRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+          
             </motion.div>
           ))}
         </div>
@@ -208,7 +228,7 @@ export default function Education() {
 
       {/* Featured Insights */}
       <div className="max-w-7xl mx-auto px-4 py-20">
-        <h2 className="text-2xl font-light text-primary mb-12">FEATURED INSIGHTS</h2>
+        <h2 className="text-2xl font-light text-primary mb-12">IN COLLABERATION</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {insights.map((insight) => (
             <motion.div
@@ -223,10 +243,10 @@ export default function Education() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="text-sm text-gray-500 mb-2">{insight.date}</div>
               <h3 className="text-xl font-semibold text-primary mb-4">{insight.title}</h3>
+              <p className="text-gray-600 mb-4">{insight.description}</p>
               <a
-                href={insight.link}
+                href={`{insight.title}`}
                 className="inline-flex items-center text-secondary group-hover:text-primary transition-colors"
               >
                 <span>Read More</span>

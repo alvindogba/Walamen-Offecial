@@ -2,12 +2,12 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 
 const services = [
-  { title: 'Curriculum Development & Training Programs', link: '/services/curriculum-development' },
-  { title: 'Healthcare Consulting & Operational Efficiency', link: '/services/healthcare' },
+  { title: 'Educational Transformation  & Training Programs', link: '/services/curriculum-development' },
+  { title: 'Agricultural Sustainability Advisory', link: '/services/healthcare' },
   { title: 'Project Management & Construction Engineering', link: '/services/construction' },
   { title: 'Sustainable Farming Solutions & Agri-Tech', link: '/services/agri-tech' },
-  { title: 'IT Consulting & Digital Transformation', link: '/services/it' },
-  { title: 'Financial Advisory & Investment Strategy', link: '/services/financial' }
+  { title: 'Real Estate and Asset Management Consulting', link: '/services/it' },
+  { title: 'Social Impact Advisory', link: '/services/financial' }
 ];
 
 export default function FocusAreas() {
@@ -64,7 +64,7 @@ export default function FocusAreas() {
         <div className="mt-20 bg-[#e63a47] rounded-xl py-12 px-2 md:px-12 flex items-center justify-between">
           <div className="text-white max-w-2xl">
             <h4 className="text-2xl font-light mb-2">
-              Receive Walatech insights and event invitations on topics relevant to your business and role.
+              Receive Walamen insights and event invitations on topics relevant to your business and role.
             </h4>
           </div>
           <Link

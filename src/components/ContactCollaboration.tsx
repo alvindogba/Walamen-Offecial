@@ -29,7 +29,7 @@ export default function ContactCollaboration() {
 
           {/* Navigation links */}
           <div className="space-y-6">
-            {['Our Team', 'More About Us', 'Explore Careers', 'Contact Us'].map((text) => (
+            {[ 'More About Us', 'Explore Careers', 'Contact Us'].map((text) => (
               <Link
                 key={text}
                 to={`/${text.toLowerCase().replace(/\s+/g, '-')}`}

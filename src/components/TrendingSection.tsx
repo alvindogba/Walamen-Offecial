@@ -1,7 +1,6 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
-import healthcare from '../assets/images/healthcare.jpg';
-
+import DigitalTransformation from '../assets/images/Digital.jpg';
 export default function TrendingSection() {
   return (
     <section className="py-20 bg-[#f1f5f8]">
@@ -21,15 +20,14 @@ export default function TrendingSection() {
             <div className="bg-white rounded-xl shadow-md overflow-hidden">
               <div className="aspect-[16/9] overflow-hidden">
                 <img
-                  src={healthcare}
-                  alt="Healthcare"
+                  src={DigitalTransformation}
+                  alt="digital transformation"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-medium text-primary mb-8">
-                The Future of Healthcare: Trends Reshaping the Industry
-                </h3>
+                Digital Transformation: Shaping the Future of Work                </h3>
                 <div className="flex justify-end">
                   <button className="inline-flex items-center space-x-3 bg-secondary text-white rounded-full px-6 py-2.5 hover:bg-red-700 transition-colors">
                     <span>Learn More</span>

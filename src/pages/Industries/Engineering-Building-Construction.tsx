@@ -6,25 +6,21 @@ const services = [
     title: 'Infrastructure Development',
     description: 'Planning and executing large-scale infrastructure projects with sustainable practices.',
     image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80',
-    link: '/services/engineering/infrastructure'
   },
   {
     title: 'Building Construction',
     description: 'Delivering innovative building solutions with a focus on quality and sustainability.',
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80',
-    link: '/services/engineering/construction'
   },
   {
     title: 'Smart Cities',
     description: 'Integrating technology and sustainable practices to create cities of the future.',
     image: 'https://images.unsplash.com/photo-1519999482648-25049ddd37b1?auto=format&fit=crop&q=80',
-    link: '/services/engineering/smart-cities'
   },
   {
     title: 'Sustainable Design',
     description: 'Creating eco-friendly solutions that minimize environmental impact.',
     image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80',
-    link: '/services/engineering/sustainable-design'
   }
 ];
 
@@ -169,13 +165,7 @@ export default function EngineeringBuildingConstruction() {
               </div>
               <h3 className="text-xl font-semibold text-primary mb-2">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              <a
-                href={service.link}
-                className="inline-flex items-center text-secondary group-hover:text-primary transition-colors"
-              >
-                <span>Learn More</span>
-                <ArrowRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+            
             </motion.div>
           ))}
         </div>

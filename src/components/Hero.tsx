@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRightIcon, ArrowLeftIcon } from '@heroicons/react/24/outline';
-import edu_hero from "../assets/images/edu_hero.jpg";
-import tech_hero from "../assets/images/tech_hero.jpg";
+import studygroupafricanpeople from "../assets/images/study-group-african-people.jpg";
+import Technology from '../assets/images/Technology-image.jpg';
 import building_engineer from "../assets/images/building-engineer.jpg";
 
 const slides = [
   {
-    image: edu_hero,
+    image: studygroupafricanpeople,
     subtitle: "Why Education Matters",
     title: "Join Us in Making a Difference",
     description: "We invite you to be part of this exciting journey. Whether you’re looking to expand your knowledge, train your team, or inspire the next generation of thinkers, we are here to support you. Together, we can build a brighter future through the power of education.",
@@ -15,7 +15,7 @@ const slides = [
     link: "/insights/education"
   },
   {
-    image: tech_hero,
+    image: Technology,
     subtitle: "Embracing new technologies",
     title: "Shift your business into the digital age of tomorrow",
     description: "Uncover the groundbreaking tech trends that are reshaping industries today",
@@ -50,26 +50,20 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-screen ">
     {/* Background layer - always visible */}
-    <div className="absolute inset-0 grid md:grid-cols-2">
+    <div className="absolute inset-0 grid ">
       <div className="relative overflow-hidden col-span-2 md:col-span-1">
         <div className="absolute inset-0">
           <img
             src={slides[currentSlide].image}
             alt="Background"
-            className="w-full h-full object-cover filter md:blur-sm transition-opacity duration-500"
+            className="w-full h-full object-cover filter  transition-opacity duration-500"
           />
-          <div className="absolute inset-0 bg-black/60 md:bg-black/40"></div>
+          <div className="absolute md:w-[50%] inset-0 bg-black/60 md:bg-black/70"></div>
         </div>
       </div>
-      <div className="relative overflow-hidden hidden md:block">
-        <img
-          src={slides[currentSlide].image}
-          alt="Background"
-          className="w-full h-full object-cover transition-opacity duration-500"
-        />
-      </div>
+     
     </div>
 
     {/* Content layer */}
