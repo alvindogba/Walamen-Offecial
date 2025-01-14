@@ -30,19 +30,19 @@ const NavLinks = ({ onItemClick }: NavLinksProps) => {
     {
       title: 'About',
       links: [
-        { name: 'Our Firm', href: '#' },
-        { name: 'Our History', href: '#' },
-        { name: 'Our Values', href: '#' },
-        { name: 'Our Mission', href: '#' }
+        { name: 'Our Firm', href: '/about/ourfirm' },
+        { name: 'Our History', href: '/about/ourhistory' },
+        { name: 'Our Values', href: '/about/ourvalues' },
+        { name: 'Our Mission', href: '/about/ourmission' }
       ]
     },
     {
       title: 'Careers',
       links: [
-        { name: 'Search Jobs', href: '#' },
-        { name: 'Students', href: '#' },
-        { name: 'Experienced', href: '#' },
-        { name: 'Life at Walamen', href: '#' }
+        { name: 'Search Jobs', href: '/careers/searchjobs' },
+        { name: 'Students', href: '/careers/students' },
+        { name: 'Experienced', href: '/careers/experienced' },
+        { name: 'Life at Walamen', href: '/careers/life_at_walamen' }
       ]
     }
   ];

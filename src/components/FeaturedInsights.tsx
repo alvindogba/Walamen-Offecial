@@ -38,7 +38,7 @@ export default function FeaturedInsights() {
             We support practical education models like bootcamps and invite you to join this learning revolution. The skills you gain today shape your future—don’t miss out. Take the leap, invest in yourself, and let us guide you on this exciting journey.
             </p>
             <Link
-              to="/insights/education"
+              to="/articles/news/insight"
               className="inline-flex items-center space-x-3 border border-secondary rounded-full px-6 py-2.5 text-secondary hover:bg-secondary hover:text-white transition-all duration-300 w-fit group"
             >
               <span className="font-medium">Read More</span>

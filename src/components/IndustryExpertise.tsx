@@ -6,7 +6,7 @@ const industries = [
   {title: 'Education', link: '/industries/education'},
   { title: 'Agriculture', link: '/industries/agriculture' },
   { title: 'Building Construction', link: '/industries/building-construction' },
-  { title: 'LeaderShip Training', link: '/insight/leadership-inovation' },
+  { title: 'Leadership Training', link: '/insight/leadership-inovation' },
   { title: 'Procurement Management', link: '/industries/logistics-infrastructure' },
   { title: 'Sustainability', link: '/industries/sustainability' },
   // { title: 'Private Clients', link: '/industries/private-clients' },

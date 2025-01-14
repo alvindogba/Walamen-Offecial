@@ -4,6 +4,7 @@ import { ArrowRightIcon, ArrowLeftIcon } from '@heroicons/react/24/outline';
 import studygroupafricanpeople from "../assets/images/study-group-african-people.jpg";
 import Technology from '../assets/images/Technology-image.jpg';
 import building_engineer from "../assets/images/building-engineer.jpg";
+import { Link } from 'react-router-dom';
 
 const slides = [
   {
@@ -12,7 +13,7 @@ const slides = [
     title: "Join Us in Making a Difference",
     description: "We invite you to be part of this exciting journey. Whether you’re looking to expand your knowledge, train your team, or inspire the next generation of thinkers, we are here to support you. Together, we can build a brighter future through the power of education.",
     insight: "Empowering the Future Through Education",
-    link: "/insights/education"
+    link: "/articles/insight/edu"
   },
   {
     image: Technology,
@@ -20,7 +21,7 @@ const slides = [
     title: "Shift your business into the digital age of tomorrow",
     description: "Uncover the groundbreaking tech trends that are reshaping industries today",
     insight: "Emerging digital transformation trends to look out for in 2025.",
-    link: "/insights/digital-trends"
+    link: "/articles/insight/tech"
   },
   {
     image: building_engineer,
@@ -28,7 +29,7 @@ const slides = [
     title: " Digitally modernize your engineering operations to enhance productivity.",
     description: " Uncover the cutting-edge technologies and practices that are revolutionizing the engineering field.",
     insight: "Engineering trends for 2025 → shaping the future of the industry.",
-    link: "/insights/engineering"
+    link: "/articles/insight/engin"
   }
 ];
 
@@ -103,6 +104,8 @@ export default function Hero() {
               >
                 {slides[currentSlide].description}
               </motion.p>
+
+              <Link to={slides[currentSlide].link}>
               <motion.button
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -112,6 +115,7 @@ export default function Hero() {
                 <span>Learn More</span>
                 <ArrowRightIcon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
+              </Link>
             </div>
 
             <div className="">
@@ -121,13 +125,13 @@ export default function Hero() {
                   {slides[currentSlide].insight}
                 </h4>
                 <div className="flex justify-between items-center">
-                  <a
-                    href={slides[currentSlide].link}
+                  <Link
+                    to={slides[currentSlide].link}
                     className="group inline-flex items-center space-x-2 text-white"
                   >
                     <span>Read Article</span>
                     <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
+                  </Link>
                   <div className="flex items-center space-x-4">
                     <button
                       onClick={prevSlide}

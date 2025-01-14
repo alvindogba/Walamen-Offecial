@@ -116,7 +116,7 @@ Walamen is transforming education by empowering schools, educators, and learners
 <section className='bg-white mb-8  min-h-[125vh] md:min-h-[80vh] '>
 
 
-      <div className='w-full h-screen p-4 pt-[5%] flex flex-col md:flex-row gap-4  md:justify-between  bg-white'>
+      <div className='w-full h-screen p-4 pt-[5%] flex flex-col md:flex-row gap-4  md:justify-between align-middle bg-white'>
          {/* image here */}
   <div className="md:w-[45%] h-[100%]">
      <img 
@@ -127,9 +127,9 @@ Walamen is transforming education by empowering schools, educators, and learners
    </div>  
  
  {/* content here */}
- <div className='md:w-[50%] flex flex-col gap-4 '>
+ <div className='md:w-[50%] flex flex-col gap-5 justify-center '>
    <h1 className='text-4xl font-bold'>Revolutionizing Education for a Digital World</h1>
-   <p className='text-lg text-gray-600'>
+   <p className='text-lg leading-8 text-gray-600'>
    "At Walamen, we are dedicated to advancing education through partnerships and innovation. From running our own Zongeatech School to collaborating with schools and institutions globally, we focus on bridging the gap between traditional learning and future-ready education. Whether it’s technology integration, workforce training, or STEM innovation, our solutions are designed to create impactful learning experiences for all."
 
      </p>
