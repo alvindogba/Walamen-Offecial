@@ -1,8 +1,8 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import bootcamp from '../assets/images/Education.jpg';
-import skill_demand from '../assets/images/skill-demand.jpg';
-import entrepreneur from '../assets/images/entrepreneur.jpg';
+// import skill_demand from '../assets/images/skill-demand.jpg';
+// import entrepreneur from '../assets/images/entrepreneur.jpg';
 
 export default function FeaturedInsights() {
   return (
@@ -48,8 +48,8 @@ export default function FeaturedInsights() {
         </div>
 
         {/* Secondary Features */}
-        <div className="flex flex-col md:flex-row gap-8">
-          {[
+        {/* <div className="flex flex-col md:flex-row gap-8"> */}
+          {/* {[
             {
               image: entrepreneur,
                 title: "Unlock Insightful Learning Now",
@@ -67,8 +67,8 @@ export default function FeaturedInsights() {
               title: " Explore  the skills that will elevate your career.",
               type: "Webinar",
               link: "/insights/audit-standards"
-            }
-          ].map((item, index) => (
+            } */}
+          {/* ].map((item, index) => (
             <Link
               key={index}
               to={item.link}
@@ -79,21 +79,21 @@ export default function FeaturedInsights() {
                   src={item.image}
                   alt={item.title}
                   className="w-[100%] md:w-[25%] h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+                /> */}
                 {/* the content  */}
-                <div className="flex flex-col justify-between">
+                {/* <div className="flex flex-col justify-between">
                   <h4>{item.title}</h4>
                   <div className="flex w-full justify-between mt-4 md:mt-0">
                     {item.type}
                     <ArrowRightIcon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
               </div>
            
-            </Link>
-          ))}
-        </div>
-      </div>
+            {/* </Link> */}
+          {/* ))} */}
+        {/* </div> */}
+      {/* </div> */}
     </section>
   );
 }

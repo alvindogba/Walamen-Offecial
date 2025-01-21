@@ -11,15 +11,18 @@
   --gray-light: #f2f2f2;
 }
 
-/* Base styles */
 body {
-  font-family: 'Inter', sans-serif;
+  @apply font-sans; /* Sets Roboto as the default font */
   font-size: 14px;
   @apply text-gray-700;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif; /* Sets Merriweather for headings */
+}
+
 /* Typography */
-h1 {
+ h1 {
   @apply text-3xl md:text-4xl font-bold;
 }
 
@@ -33,7 +36,7 @@ h3 {
 
 p {
   @apply text-sm md:text-base;
-}
+} 
 
 /* Button Styles */
 .btn {

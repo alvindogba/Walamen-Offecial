@@ -16,7 +16,7 @@ export default function TrendingSection() {
         {/* Cards Grid */}
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Large Card */}
-          <Link to="/insights/healthcare" className="group">
+          <Link to="/articles/trending/now1" className="group">
             <div className="bg-white rounded-xl shadow-md overflow-hidden">
               <div className="aspect-[16/9] overflow-hidden">
                 <img
@@ -41,7 +41,7 @@ export default function TrendingSection() {
           {/* Right Column */}
           <div className="flex flex-col gap-6">
             {/* Top Card */}
-            <Link to="/insights/gig-economy" className="group flex-1">
+            <Link to="/articles/trending/now2" className="group flex-1">
               <div className="bg-white rounded-xl shadow-md p-6 h-full flex flex-col justify-between">
                 <h3 className="text-2xl font-medium text-primary">
                 Rise of the Gig and Remote Economy
@@ -59,7 +59,7 @@ export default function TrendingSection() {
             </Link>
 
             {/* Bottom Card */}
-            <Link to="/insights/emerging-markets" className="group flex-1">
+            <Link to="/articles/trending/now3" className="group flex-1">
               <div className="bg-primary rounded-xl shadow-md p-6 h-full flex flex-col justify-between">
                 <h3 className="text-2xl font-medium text-white">
                 Emerging Markets on the Rise

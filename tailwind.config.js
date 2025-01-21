@@ -15,7 +15,8 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Open Sans', 'sans-serif'], // Primary font for body text
+        serif: ['Merriweather', 'serif'], // Accent font for headings or special text
       },
     },
   },

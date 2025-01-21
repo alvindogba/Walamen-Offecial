@@ -2,12 +2,12 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 
 const services = [
-  { title: 'Educational Transformation  & Training Programs', link: '/services/curriculum-development' },
-  { title: 'Agricultural Sustainability Advisory', link: '/services/healthcare' },
-  { title: 'Project Management & Construction Engineering', link: '/services/construction' },
-  { title: 'Sustainable Farming Solutions & Agri-Tech', link: '/services/agri-tech' },
-  { title: 'Real Estate ', link: '/services/it' },
-  { title: 'Social Impact Advisory', link: '/services/financial' }
+  { title: 'Implementation', link: '/capabilities/Implementation' },
+  { title: 'Digital', link: '/capabilities/digital' },
+  { title: 'Growth, Marketing', link: '/capabilities/growth-marketion' },
+  { title: 'Sustainability', link: '/capabilities/sustainability' },
+  { title: 'Real Estate ', link: '/capabilities/real-estate' },
+  { title: 'Risk & Resilience ', link: '/capabilities/risk-resilience' }
 ];
 
 export default function FocusAreas() {
@@ -20,13 +20,13 @@ export default function FocusAreas() {
           <div className="relative mb-6">
             <div className="w-12 h-0.5 bg-secondary absolute -top-3"></div>
             <h2 className="text-sm font-medium text-[#333333] uppercase tracking-wider">
-              SERVICES
+              Capabilities
             </h2>
           </div>
 
           {/* Main heading */}
           <h3 className="text-4xl font-light text-[#2A2A2A] mb-4">
-            Versatile advisory service offerings
+          Flexible Capability Solutions
           </h3>
 
           <p className="text-[#757575] text-lg mb-8">
@@ -37,7 +37,7 @@ export default function FocusAreas() {
             to="/services"
             className="inline-flex items-center space-x-3 text-secondary group"
           >
-            <span>All Services</span>
+            <span>All Capabilities</span>
             <div className="w-8 h-8 rounded-full border-2 border-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all">
               <ArrowRightIcon className="w-4 h-4" />
             </div>
@@ -68,7 +68,7 @@ export default function FocusAreas() {
             </h4>
           </div>
           <Link
-            to="/subscribe"
+            to="/contact"
             className="inline-flex items-center space-x-3 text-white group"
           >
             <span>Subscribe</span>

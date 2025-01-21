@@ -1,14 +1,14 @@
 
-import { ArrowRightIcon, ArrowLeftIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon} from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 
 const industries = [
   {title: 'Education', link: '/industries/education'},
   { title: 'Agriculture', link: '/industries/agriculture' },
   { title: 'Building Construction', link: '/industries/building-construction' },
-  { title: 'Leadership Training', link: '/insight/leadership-inovation' },
+  { title: 'Leadership Training', link: '/insights/leadership-innovation' },
   { title: 'Procurement Management', link: '/industries/logistics-infrastructure' },
-  { title: 'Sustainability', link: '/industries/sustainability' },
+  { title: 'Sustainability', link: '/insights/sustainability' },
   // { title: 'Private Clients', link: '/industries/private-clients' },
   // { title: 'Public Sector', link: '/industries/public-sector' },
   // { title: 'Real Estate', link: '/industries/real-estate' }
@@ -50,7 +50,7 @@ export default function IndustryExpertise() {
             {/* Learn More button and navigation */}
             <div className="flex items-center justify-between">
               <Link
-                to="/industries"
+                to="/articles/data/analytics"
                 className="inline-flex items-center space-x-3 text-secondary hover:text-white hover:bg-secondary px-6 py-2.5 rounded-full border-2 border-secondary transition-all duration-300"
               >
                 <span>Learn More</span>
@@ -58,14 +58,14 @@ export default function IndustryExpertise() {
               </Link>
 
               {/* Navigation buttons */}
-              <div className="flex space-x-4">
+              {/* <div className="flex space-x-4">
                 <button className="w-12 h-12 rounded-full border-2 border-secondary flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-colors">
                   <ArrowLeftIcon className="w-5 h-5" />
                 </button>
                 <button className="w-12 h-12 rounded-full border-2 border-secondary flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-colors">
                   <ArrowRightIcon className="w-5 h-5" />
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

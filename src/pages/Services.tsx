@@ -1,21 +1,47 @@
 import { motion } from 'framer-motion';
+import {BookOpenText, FolderTree} from "lucide-react"
 
 const services = [
   {
-    title: 'Digital Transformation',
-    description: 'Enabling businesses to evolve with cutting-edge technologies.',
-    icon: '🚀'
+    title: 'Educational Transformation & Training Programs',
+    description: 'Innovative solutions for the education sector.',
+    icon: {BookOpenText}
   },
   {
-    title: 'Sustainability Solutions',
+    title: 'Project Management & Construction Engineering',
     description: 'Innovative practices for a greener tomorrow.',
-    icon: '🌱'
+    icon: {FolderTree}
   },
   {
-    title: 'Data Analytics',
-    description: 'Transform data into actionable insights.',
-    icon: '📊'
-  }
+    title: 'Real Estate Development & Management',
+    description: 'Sustainable solutions for the future.',
+    icon: {FolderTree}
+  },
+  {
+    title: 'Agricultural Development & Management',
+    description: 'Innovative practices for a greener tomorrow.',
+    icon: {FolderTree}
+  },
+  {
+    title: 'Social Sector Development & Management',
+    description: 'Sustainable solutions for the future.',
+    icon: {FolderTree}
+  },
+  {
+    title: 'Logistics & Infrastructure Development',
+    description: 'Innovative practices for a greener tomorrow.',
+    icon: {FolderTree}
+  },
+  {
+    title: 'Technology & Innovation',
+    description: 'Sustainable solutions for the future.',
+    icon: {FolderTree}
+  },
+  {
+    title: 'Building & Construction',
+    description: 'Innovative practices for a greener tomorrow.',
+    icon: {FolderTree}
+  },
 ];
 
 export default function Services() {
@@ -44,7 +70,6 @@ export default function Services() {
               transition={{ delay: index * 0.2 }}
               className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all"
             >
-              <div className="text-4xl mb-4">{service.icon}</div>
               <h2 className="text-2xl font-bold text-primary mb-4">{service.title}</h2>
               <p className="text-gray">{service.description}</p>
             </motion.div>
