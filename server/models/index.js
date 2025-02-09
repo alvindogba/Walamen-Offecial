@@ -3,7 +3,7 @@ import path from "path";
 import { Sequelize, DataTypes } from "sequelize";
 import { fileURLToPath } from "url";
 import process from "process";
-import config from "../config/config.js";
+import config from "../config/config.js";  
 
 // For ES module compatibility
 const __filename = fileURLToPath(import.meta.url);

@@ -38,12 +38,15 @@ import Experienced from './pages/Careers/experience';
 import Students from './pages/Careers/students';
 import SearchJobs from './pages/Careers/SearchJobs';
 
+
 // Articles 
 import {Edu, Tech, Engin, NewInsight, Analytics, TrandingNow1, TrandingNow2, TrandingNow3} from './pages/Articles/HomepageArticles/article1';
 // Capabilities 
 import { Implementation, Digital, GrowthMarketing, SustainabilityCapability, RealEstateCapabilities, RiskResilience} from './pages/Capabilities/capabilities';
 // Fallback
+
 const NotFound = () => <h1>Page Not Found</h1>;
+import AdminDashboard from './pages/Admin';
 
 function App() {
   return (
@@ -59,6 +62,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
+            <Route path='superadmin' element={<AdminDashboard />} />
+
 
             {/* About Routes */}
             <Route path="/about" element={<About />}>
