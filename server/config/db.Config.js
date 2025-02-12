@@ -33,12 +33,12 @@ const config = {
         logging: false
     },
     production: {
-        database: process.env.DB_NAME,
-        username: process.env.DB_USER,
-        password: process.env.DB_PASSWORD,
-        host: process.env.DB_HOST,
-        dialect: 'mysql',
-        port: process.env.DB_PORT || 3306,
+        database: process.env.PROD_DB_NAME,
+        username: process.env.PROD_DB_USERNAME,
+        password: process.env.PROD_DB_PASSWORD,
+        host: process.env.PROD_DB_HOST,
+        dialect: 'postgress',
+        port: process.env.PROD_DB_PORT || 5432,
         dialectOptions: {
             connectTimeout: 60000, // Increased to 60 seconds
             ssl: {

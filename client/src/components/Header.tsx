@@ -1,5 +1,6 @@
 import  { useState } from 'react';
-import { Menu, MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Menu, PhoneCall } from 'lucide-react';
 import Logo from './header/Logo';
 import MobileMenu from './header/MobileMenu';
 import DesktopSearch from './header/DesktopSearch';
@@ -27,7 +28,9 @@ const Header = () => {
             <div className="flex items-center gap-6">
               <DesktopSearch />
               <button className="text-gray-500 hover:text-gray-700">
-                <MessageCircle className="h-6 w-6" />
+                <Link to="/contact">
+                <PhoneCall className="h-6 w-6 text-secondary" />
+                </Link>
               </button> 
             </div>
           </div>

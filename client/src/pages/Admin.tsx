@@ -17,17 +17,30 @@ export default function AdminDashboard() {
 
   // Fetch messages
   useEffect(() => {
-    axios.get("http://localhost:5000/api/messages").then((res) => setMessages(res.data));
+    axios.get("http://localhost:5000/api/messages")
+      .then((res) => setMessages(res.data))
+      .catch((err) => console.error("Error fetching messages:", err));
   }, []);
 
   // Handle reply submission
   const sendReply = async (id: number) => {
-    if (!reply[id]) return alert("Reply cannot be empty");
+    if (!reply[id] || reply[id].trim() === "") {
+      return alert("Reply cannot be empty");
+    }
 
-    await axios.post(`http://localhost:5000/api/messages/reply:/${id}`, { reply: reply[id] });
-    
-    setMessages(messages.map((msg) => (msg.id === id ? { ...msg, status: "replied", adminReply: reply[id] } : msg)));
-    setReply({ ...reply, [id]: "" }); // Clear input
+    try {
+      await axios.post(`http://localhost:5000/api/messages/reply/${id}`, {
+        reply: reply[id],
+      });
+
+      setMessages(messages.map((msg) => 
+        msg.id === id ? { ...msg, status: "replied", adminReply: reply[id] } : msg
+      ));
+      setReply({ ...reply, [id]: "" }); // Clear input
+    } catch (error) {
+      console.error("Error sending reply:", error);
+      alert("Failed to send reply");
+    }
   };
 
   return (

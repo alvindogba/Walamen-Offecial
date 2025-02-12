@@ -7,7 +7,7 @@ const services = [
   { title: 'Growth, Marketing', link: '/capabilities/growth-marketion' },
   { title: 'Sustainability', link: '/capabilities/sustainability' },
   { title: 'Real Estate ', link: '/capabilities/real-estate' },
-  { title: 'Risk & Resilience ', link: '/capabilities/risk-resilience' }
+  // { title: 'Risk & Resilience ', link: '/capabilities/risk-resilience' }
 ];
 
 export default function FocusAreas() {
@@ -61,7 +61,7 @@ export default function FocusAreas() {
         </div>
 
         {/* Newsletter Section */}
-        <div className="mt-20 bg-[#e63a47] rounded-xl py-12 px-2 md:px-12 flex items-center justify-between">
+        {/* <div className="mt-20 bg-[#e63a47] rounded-xl py-12 px-2 md:px-12 flex items-center justify-between">
           <div className="text-white max-w-2xl">
             <h4 className="text-2xl font-light mb-2">
               Receive Walamen insights and event invitations on topics relevant to your business and role.
@@ -76,7 +76,7 @@ export default function FocusAreas() {
               <ArrowRightIcon className="w-4 h-4" />
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

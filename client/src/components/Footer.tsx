@@ -71,8 +71,8 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Newsletter</h4>
-            <p className="text-gray-300 mb-4">Subscribe to our newsletter for the latest insights and updates.</p>
+            <h4 className="font-bold text-lg mb-4">Stay Connected</h4>
+            <p className="text-gray-300 mb-4">Receive Walamen insights and event invitations on topics relevant to your business and role.</p>
             <form className="space-y-3">
               <input
                 type="email"

@@ -35,7 +35,10 @@ export const replyToMessage = async (req, res) => {
   try {
     const { messageId } = req.params;
     const { reply } = req.body;
-    
+
+
+       console.log("Received messageId:", messageId);
+    console.log("Received reply:", reply);
     if (!reply) {
       return res.status(400).json({ error: 'Reply message is required' });
     }
