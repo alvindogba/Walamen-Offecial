@@ -26,7 +26,14 @@ const config = {
     database: process.env.PROD_DB_NAME ,
     host: process.env.PROD_DB_HOST ,
     port: process.env.PROD_DB_PORT,
-    dialect: "postgres", 
+    dialect: "postgres",
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
+     
   },
 };
 

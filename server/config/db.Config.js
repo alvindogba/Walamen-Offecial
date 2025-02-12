@@ -42,7 +42,8 @@ const config = {
         dialectOptions: {
             connectTimeout: 60000, // Increased to 60 seconds
             ssl: {
-                rejectUnauthorized: false
+                require: true,
+                rejectUnauthorized: false,
             }
         },
         pool: {
