@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import axios from "axios";
 import { motion } from "framer-motion";
 
-const socket = io("http://localhost:5000"); // Update this with your deployed backend URL
+const socket = io("https://walamen-offecial.onrender.com"); // Update this with your deployed backend URL
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "", subject: "" });
@@ -22,17 +22,17 @@ export default function Contact() {
     };
   }, []);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/messages/send", formData);
+      const response = await axios.post("https://walamen-offecial.onrender.com", formData);
       console.log("Message Sent:", response.data);
       setFormData({ name: "", email: "", message: "", subject: "" });
       setModalOpen(true); // Open the modal on successful submission

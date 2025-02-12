@@ -17,7 +17,7 @@ export default function AdminDashboard() {
 
   // Fetch messages
   useEffect(() => {
-    axios.get("http://localhost:5000/api/messages")
+    axios.get("https://walamen-offecial.onrender.com/api/messages")
       .then((res) => setMessages(res.data))
       .catch((err) => console.error("Error fetching messages:", err));
   }, []);
@@ -29,7 +29,7 @@ export default function AdminDashboard() {
     }
 
     try {
-      await axios.post(`http://localhost:5000/api/messages/reply/${id}`, {
+      await axios.post(`https://walamen-offecial.onrender.com/api/messages/reply/${id}`, {
         reply: reply[id],
       });
 

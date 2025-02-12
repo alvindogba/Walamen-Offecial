@@ -21,7 +21,7 @@ import Building from './pages/Industries/Building';
 
 // Insights
 import DigitalTransformation from './pages/Insight/Digital-Transformation';
-import EconomicTrends from './pages/Insight/Economic-Trends';
+import EconomicTrends from './pages/Insight/Economic-trends';
 import LeadershipInnovation from './pages/Insight/Leadership-Innovation';
 import Sustainability from './pages/Insight/Sustainability';
 import DataAnalytics from './pages/Insight/Data-Analytics';
