@@ -14,14 +14,13 @@
   "author": "",
   "type": "module",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=production node server.js",
-    "dev": "cross-env NODE_ENV=development nodemon server.js",
-    "build": "npm install",
-    "migrate": "npx sequelize-cli db:migrate",
-    "seed": "npx sequelize db:seed"
-  },
+ "scripts": {
+  "start": "cross-env NODE_ENV=production node server.js",
+  "dev": "cross-env NODE_ENV=development nodemon server.js",
+  "migrate": "npx sequelize-cli db:migrate --env production",
+  "seed": "npx sequelize-cli db:seed --env production",
+  "postinstall": "npm run migrate"
+},
   "dependencies": {
     "@socket.io/admin-ui": "^0.5.1",
     "cors": "^2.8.5",
