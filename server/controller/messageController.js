@@ -1,5 +1,7 @@
 import db from "../models/index.js";
 import nodemailer from "nodemailer";
+import axios from "axios";
+
 
 export const sendMessage = async (req, res) => {
   try {
@@ -82,4 +84,50 @@ const sendEmailNotification = async (recipientEmail, subject, reply) => {
   };
 
   await transporter.sendMail(mailOptions);
+};
+
+
+////////////////////// Subscribe controller ////////////////////////////////////////////////
+
+export const subscribe = async (req, res) => {
+  console.log(req.body)
+  // Environment variables
+  const MAILCHIMP_API_KEY = process.env.MAILCHIMP_API_KEY;
+  const MAILCHIMP_SERVER = process.env.MAILCHIMP_SERVER;
+  const MAILCHIMP_AUDIENCE_ID = process.env.MAILCHIMP_AUDIENCE_ID;
+
+  if (!MAILCHIMP_API_KEY || !MAILCHIMP_SERVER || !MAILCHIMP_AUDIENCE_ID) {
+    return res.status(500).json({ error: "Missing Mailchimp environment variables" });
+  }
+
+  const { email } = req.body;
+
+  if (!email) {
+    return res.status(400).json({ error: "Email is required" });
+  }
+
+  try {
+    
+    const url = `https://${MAILCHIMP_SERVER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_AUDIENCE_ID}/members`;
+    const encodedApiKey = Buffer.from(`anystring:${MAILCHIMP_API_KEY}`).toString("base64");
+
+    const response = await axios.post(
+      url,
+      { email_address: email, status: "subscribed" },
+      { headers: { Authorization: `Basic ${encodedApiKey}`, "Content-Type": "application/json" } }
+    );
+
+    return res.status(200).json({ message: "Subscription successful", data: response.data });
+
+  } catch (error) {
+    console.error("Error subscribing:", error.response?.data || error.message);
+
+    if (error.response?.status === 400 && error.response?.data?.title === "Member Exists") {
+      return res.status(400).json({ error: "This email is already subscribed." });
+    }
+
+    return res.status(error.response?.status || 500).json({ 
+      error: error.response?.data?.detail || "Failed to subscribe. Please try again later." 
+    });
+  }
 };
