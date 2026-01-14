@@ -11,8 +11,8 @@ export default defineConfig({
     host: '0.0.0.0',
     proxy: {
       '/api': {
-        // target: 'https://walamen-offecial.onrender.com', // Backend server
-        target: 'http://localhost:5000', // Backend server
+        target: 'https://walamen-offecial.onrender.com', // Backend server
+        // target: 'http://localhost:5000', // Backend server
 
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '/api'), // Ensure proper forwarding
